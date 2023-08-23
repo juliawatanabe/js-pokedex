@@ -1,3 +1,106 @@
-body {
+* {
     font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
 }
+
+body {
+    background-color: #f5f6f6;
+}
+
+.content {
+    padding: 1rem;
+    background-color: white;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+}
+
+.pokemonList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+    color: mintcream;
+}
+
+@media screen and (min-width: 992px) {
+    .pokemonList {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    min-width: 150px;
+    max-width: 225px;
+}
+
+
+/* if i select all li elements inside .pokemonList then it will apply those styles to all items even those inside .detailsPoke, so I need to specify that those styles only apply to the "bigger" li, the ones that i gave a class based on plant type etc. because of that, i decide to give it another class (pokemon) so the rules here doesnt apply to all li*/
+
+.detailsPoke {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detailsPoke img {
+    max-width: 100%;
+    height: 70px;
+    align-self: flex-end;
+}
+
+.numberPoke {
+    color: rgba(245, 245, 245, 0.5);;
+    align-self: flex-end;
+    font-size: .80rem;
+}
+
+.namePoke {
+    align-self: flex-start;
+    margin: .25rem 0;
+}
+
+.typePoke {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+} /*this style cant be done to the li, but the ol.*/
+
+/* i dont know why but if i put the parent class before the class of the element i'm styling, the styles wont work... .detailsPoke .typePoke =/= .typePoke*/
+
+.typePoke li {
+    background-color: rgba(245, 245, 245, 0.3);
+    padding: .25rem .5rem;
+    margin: .25rem .1rem;
+    border-radius: .5rem;
+    font-size: .75rem;
+}
+
+.plantType {
+    background-color: mediumaquamarine;
+}
+
+.fireType {
+    background-color: indianred;
+}
+
+.waterType {
+    background-color: cornflowerblue;
+}
+
+.electricType {
+    background-color: khaki;
+}
+
