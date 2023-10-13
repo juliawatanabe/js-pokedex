@@ -20,113 +20,22 @@
 </head>
 <body>
     <section class="content">
+
         <h1>Pokedex</h1>
-        <ol class="pokemonList">
 
-            <li class="grassType pokemon">
-                
-               
-                <span class="numberPoke">#001</span>
-                <span class="namePoke">Bulbasaur</span>
-                
-                
+        <ol id="pokemonList" class="pokemonList">
+            <!-- pokemon here -->
+        </ol>   
 
-                <div class="detailsPoke">
-                    <ol class="typePoke"> 
-                        <li>grass</li>
-                        <li>poison</li>
-                    </ol> <!-- created an ol cause the types are organized by numbers on pokeapi -->
+    <div class="pagination">
+        <button id="loadMore" type="button">Load More</button>
+    </div>
 
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Official Artwork Bulbasaur - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="grassType pokemon">
-                Ivysaur
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg" alt="Official Artwork Ivysaur - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="grassType pokemon">
-                Venusaur
-
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg" alt="Official Artwork Venusaur - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="fireType">
-                Charmander
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg" alt="Official Artwork Charmander - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="fireType">
-                Charmeleon
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg" alt="Official Artwork Charmeleon - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="fireType">
-                Charizard
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg" alt="Official Artwork Charizard - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="waterType">
-                Squirtle
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg" alt="Official Artwork Squirtle - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="waterType">
-                Wartortle
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/8.svg" alt="Official Artwork Wartortle - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="waterType">
-                Blastoise
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/9.svg" alt="Official Artwork Blastoise - Dream world">
-                </div>
-                
-            </li>
-
-            <li class="electricType">
-                Pikachu
-                <div class="detailsPoke">
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg" alt="Official Artwork Pikachu - Dream world">
-                </div>
-                
-            </li>
-        </ol>  
     </section>
-    
-    <!-- script principal -->
+
+    <!-- scripts -->
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
 </body>
 </html>

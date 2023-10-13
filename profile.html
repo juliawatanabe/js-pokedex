@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+
+    <!--Normalize css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/global.css">
+    <link rel="stylesheet" href="/assets/css/poke-profile.css">
+
+    <!-- phosphor script -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+    
+    <!-- Fonte Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="headerButtons">
+            <button id="previousPage" type="button" onclick="history.back()"> 
+            <!-- onclick with that value returns to the previous page -->
+                <i class="ph-bold ph-arrow-left"></i>
+            </button>
+            <button id="favorite" type="button">
+                <i class="ph-bold ph-heart"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="profileCard" id="pokeProfile">
+        <div class="mainContent">
+            <span class="name">{Bulbasaur}</span>
+            <span class="number">{#001}</span>
+        
+            <ol class="types">
+                <li>{grass}</li>
+                <li>{poison}</li>
+            </ol>
+
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="Bulbasaur"> 
+        </div> 
+        
+        <div class="moreDetails">
+            <span>About</span>
+            <hr>
+            <ul class="detailsContent">
+                <li>Species: {Seed}</li>
+                <li>Weight: {6.9 kg}</li>
+                <li>Height: {70 cm}</li>
+                <li>Abilities: {Overgrow, Chlorophyll}</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- scripts -->
+    <script src="/assets/js/pokemon-model.js"></script>
+    <script src="/assets/js/poke-api.js"></script>
+    <script src="/assets/js/poke-profile.js"></script>
+    
+</body>
+</html>
+
+

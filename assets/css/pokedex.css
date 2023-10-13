@@ -4,7 +4,6 @@
     margin: .5rem;
     padding: 1rem;
     border-radius: 1rem;
-    width: 225px;
 }
 
 .pokemonList {
@@ -13,37 +12,37 @@
     list-style: none;
     padding: 0;
     margin: 0;  
-    color: mintcream;
+    color: ghostwhite;
 }
 
 /* if i select all li elements inside .pokemonList then it will apply those styles to all items even those inside .detailsPoke, so I need to specify that those styles only apply to the "bigger" li, the ones that i gave a class based on plant type etc. because of that, i decide to give it another class (pokemon) so the rules here doesnt apply to all li*/
 
-.detailsPoke {
+.detail {
     display: flex;
     flex-direction: row;
-    margin: 0;
+    /* margin: 0; */
     align-items: center;
     justify-content: space-between;
 }
 
-.detailsPoke img {
+.detail img {
     max-width: 100%;
     height: 70px;
-    align-self: flex-end;
+    /* align-self: flex-end; */
 }
 
-.numberPoke {
+.number {
     color: rgba(245, 245, 245, 0.5);;
-    align-self: flex-end;
+    text-align: right;
     font-size: .80rem;
 }
 
-.namePoke {
+.name {
     align-self: flex-start;
     margin: .25rem 0;
 }
 
-.typePoke {
+.types {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -51,28 +50,101 @@
 
 /* i dont know why but if i put the parent class before the class of the element i'm styling, the styles wont work... .detailsPoke .typePoke =/= .typePoke*/
 
-.typePoke li {
+.type {
     background-color: rgba(245, 245, 245, 0.3);
     padding: .25rem .5rem;
     margin: .25rem .1rem;
     border-radius: .5rem;
     font-size: .75rem;
+    filter: brightness(1.1);
 }
 
-.grassType {
-    background-color: mediumaquamarine;
+.normal {
+    background-color: #BCB9BD;
 }
 
-.fireType {
-    background-color: indianred;
+.grass {
+    background-color: #8FC85A;
 }
 
-.waterType {
-    background-color: cornflowerblue;
+.bug {
+    background-color: #A5B424;
 }
 
-.electricType {
-    background-color: khaki;
+.fire {
+    background-color: #DA390F;
+}
+
+.ghost {
+    background-color: #5E64AB;
+}
+
+.dragon {
+    background-color: #756FD3;
+}
+
+.rock {
+    background-color: #B29B58;
+}
+
+.steel {
+    background-color: #BCB9BD;
+}
+
+.poison {
+    background-color: #8D468B;
+}
+
+.dark {
+    background-color: #513622;
+}
+
+.fairy {
+    background-color: #EFB8F0;
+}
+
+.electric{
+    background-color: #F8BC28;
+}
+
+.fighting {
+    background-color: #823425;
+}
+
+.psychic {
+    background-color: #DF497B;
+}
+
+.ice {
+    background-color: #ADE2FB;
+}
+
+.water {
+    background-color: #3892EC;
+}
+
+.flying {
+    background-color: #99A6ED;
+}
+
+.ground {
+    background-color: #CEB360;
+}
+
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.pagination button {
+    color: white;
+    background-color: #BCB9BD;
+    border: none;
+    border-radius: 1rem;
 }
 
 @media screen and (min-width: 992px) {
